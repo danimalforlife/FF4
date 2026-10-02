@@ -6,7 +6,9 @@ description: |+
 dependencies: 
 assets:
 
-#Room Transitions#
+#####################
+#PC Room Transitions#
+#####################
 - name: remastered/field2d/fr/al0field.2dd/FR_al0field_2dd2.png
   multi: 
   - name: remastered/field2d/fr/bb0field.2dd/FR_bb0field_2dd2.png
@@ -21,7 +23,6 @@ assets:
   - name: remastered/field2d/fr/nm0field.2dd/FR_nm0field_2dd2.png
   - name: remastered/field2d/fr/po0field.2dd/FR_po0field_2dd2.png
   - name: remastered/field2d/fr/tr0field.2dd/FR_tr0field_2dd2.png
-  - name: remastered/field2d/fr/tt0field.2dd/FR_tt0field_2dd2.png
   - name: remastered/field2d/fr/wi0field.2dd/FR_wi0field_2dd2.png
   - name: remastered/field2d/fr/zz0field.2dd/FR_zz0field_2dd2.png
   - name: remastered/field2d/gr/al0field.2dd/GR_al0field_2dd2.png
@@ -37,7 +38,6 @@ assets:
   - name: remastered/field2d/gr/nm0field.2dd/GR_nm0field_2dd2.png
   - name: remastered/field2d/gr/po0field.2dd/GR_po0field_2dd2.png
   - name: remastered/field2d/gr/tr0field.2dd/GR_tr0field_2dd2.png
-  - name: remastered/field2d/gr/tt0field.2dd/GR_tt0field_2dd2.png
   - name: remastered/field2d/gr/wi0field.2dd/GR_wi0field_2dd2.png
   - name: remastered/field2d/gr/zz0field.2dd/GR_zz0field_2dd2.png
   - name: remastered/field2d/it/al0field.2dd/IT_al0field_2dd2.png
@@ -53,7 +53,6 @@ assets:
   - name: remastered/field2d/it/nm0field.2dd/IT_nm0field_2dd2.png
   - name: remastered/field2d/it/po0field.2dd/IT_po0field_2dd2.png
   - name: remastered/field2d/it/tr0field.2dd/IT_tr0field_2dd2.png
-  - name: remastered/field2d/it/tt0field.2dd/IT_tt0field_2dd2.png
   - name: remastered/field2d/it/wi0field.2dd/IT_wi0field_2dd2.png
   - name: remastered/field2d/it/zz0field.2dd/IT_zz0field_2dd2.png
   - name: remastered/field2d/jp/al0field.2dd/JP_al0field_2dd2.png
@@ -69,7 +68,6 @@ assets:
   - name: remastered/field2d/jp/nm0field.2dd/JP_nm0field_2dd2.png
   - name: remastered/field2d/jp/po0field.2dd/JP_po0field_2dd2.png
   - name: remastered/field2d/jp/tr0field.2dd/JP_tr0field_2dd2.png
-  - name: remastered/field2d/jp/tt0field.2dd/JP_tt0field_2dd2.png
   - name: remastered/field2d/jp/wi0field.2dd/JP_wi0field_2dd2.png
   - name: remastered/field2d/jp/zz0field.2dd/JP_zz0field_2dd2.png
   - name: remastered/field2d/sp/al0field.2dd/SP_al0field_2dd2.png
@@ -85,7 +83,6 @@ assets:
   - name: remastered/field2d/sp/nm0field.2dd/SP_nm0field_2dd2.png
   - name: remastered/field2d/sp/po0field.2dd/SP_po0field_2dd2.png
   - name: remastered/field2d/sp/tr0field.2dd/SP_tr0field_2dd2.png
-  - name: remastered/field2d/sp/tt0field.2dd/SP_tt0field_2dd2.png
   - name: remastered/field2d/sp/wi0field.2dd/SP_wi0field_2dd2.png
   - name: remastered/field2d/sp/zz0field.2dd/SP_zz0field_2dd2.png
   - name: remastered/field2d/us/al0field.2dd/US_al0field_2dd2.png
@@ -101,9 +98,141 @@ assets:
   - name: remastered/field2d/us/nm0field.2dd/US_nm0field_2dd2.png
   - name: remastered/field2d/us/po0field.2dd/US_po0field_2dd2.png
   - name: remastered/field2d/us/tr0field.2dd/US_tr0field_2dd2.png
-  - name: remastered/field2d/us/tt0field.2dd/US_tt0field_2dd2.png
   - name: remastered/field2d/us/wi0field.2dd/US_wi0field_2dd2.png
   - name: remastered/field2d/us/zz0field.2dd/US_zz0field_2dd2.png
+  package: kh2_fifth
+  platform: pc
   method: copy
   source:
   - name: FF4.png
+
+
+- name: remastered/field2d/fr/tt0field.2dd/FR_tt0field_2dd2.png
+  multi: 
+  - name: remastered/field2d/gr/tt0field.2dd/GR_tt0field_2dd2.png
+  - name: remastered/field2d/it/tt0field.2dd/IT_tt0field_2dd2.png
+  - name: remastered/field2d/jp/tt0field.2dd/JP_tt0field_2dd2.png
+  - name: remastered/field2d/sp/tt0field.2dd/SP_tt0field_2dd2.png
+  - name: remastered/field2d/us/tt0field.2dd/US_tt0field_2dd2.png
+  package: kh2_first
+  platform: pc
+  method: copy
+  source:
+  - name: FF4.png
+
+
+######################
+#PS2 Room Transitions#
+######################
+- name: field2d/jp/tt0field.2dd
+  package: kh2_first
+  platform: ps2
+  method: copy
+  source:
+  - name: ps2/tt0field.2dd
+
+
+- name: field2d/jp/al0field.2dd
+  package: kh2_fifth
+  platform: ps2
+  method: copy
+  source:
+  - name: ps2/al0field.2dd
+
+- name: field2d/jp/bb0field.2dd
+  package: kh2_fifth
+  platform: ps2
+  method: copy
+  source:
+  - name: ps2/bb0field.2dd
+
+- name: field2d/jp/ca0field.2dd
+  package: kh2_fifth
+  platform: ps2
+  method: copy
+  source:
+  - name: ps2/ca0field.2dd
+
+- name: field2d/jp/dc0field.2dd
+  package: kh2_fifth
+  platform: ps2
+  method: copy
+  source:
+  - name: ps2/dc0field.2dd
+
+- name: field2d/jp/di0field.2dd
+  package: kh2_fifth
+  platform: ps2
+  method: copy
+  source:
+  - name: ps2/di0field.2dd
+
+- name: field2d/jp/eh0field.2dd
+  package: kh2_fifth
+  platform: ps2
+  method: copy
+  source:
+  - name: ps2/eh0field.2dd
+
+- name: field2d/jp/hb0field.2dd
+  package: kh2_fifth
+  platform: ps2
+  method: copy
+  source:
+  - name: ps2/hb0field.2dd
+
+- name: field2d/jp/he0field.2dd
+  package: kh2_fifth
+  platform: ps2
+  method: copy
+  source:
+  - name: ps2/he0field.2dd
+
+- name: field2d/jp/lk0field.2dd
+  package: kh2_fifth
+  platform: ps2
+  method: copy
+  source:
+  - name: ps2/lk0field.2dd
+
+- name: field2d/jp/lm0field.2dd
+  package: kh2_fifth
+  platform: ps2
+  method: copy
+  source:
+  - name: ps2/lm0field.2dd
+
+- name: field2d/jp/mu0field.2dd
+  package: kh2_fifth
+  platform: ps2
+  method: copy
+  source:
+  - name: ps2/mu0field.2dd
+
+- name: field2d/jp/nm0field.2dd
+  package: kh2_fifth
+  platform: ps2
+  method: copy
+  source:
+  - name: ps2/nm0field.2dd
+
+- name: field2d/jp/po0field.2dd
+  package: kh2_fifth
+  platform: ps2
+  method: copy
+  source:
+  - name: ps2/po0field.2dd
+
+- name: field2d/jp/tr0field.2dd
+  package: kh2_fifth
+  platform: ps2
+  method: copy
+  source:
+  - name: ps2/tr0field.2dd
+
+- name: field2d/jp/wi0field.2dd
+  package: kh2_fifth
+  platform: ps2
+  method: copy
+  source:
+  - name: ps2/wi0field.2dd
